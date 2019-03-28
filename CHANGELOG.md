@@ -1,3 +1,7 @@
+## 2.1.0
+
+- Adds emoji to merged status.
+
 ## 2.0.0
 
 - Adds the party emoji to approved PR's

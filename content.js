@@ -1,4 +1,6 @@
 const hostname = `source.int.netcentric.biz`
+const commonCSSFixForStatus = `padding: 7px 7px 6px;`
+const greenStatusCSS = `color: #14892c; background: white;`
 
 
 if (window.location.hostname === hostname) {
@@ -6,14 +8,23 @@ if (window.location.hostname === hostname) {
 
   $needsWork.forEach(($element) => {
     $element.innerText += ` 🌝`
+    $element.style.cssText = commonCSSFixForStatus
   })
 
   const $approved = document.querySelectorAll('.approved.pull-request-state-lozenge')
 
   $approved.forEach(($element) => {
     $element.innerText += ` 🥳`
-    $element.style.cssText = `padding: 7px 5px 5px 5px; color: #14892c; background: white;`
+    $element.style.cssText = `${commonCSSFixForStatus} ${greenStatusCSS}`
   })
+
+  const $merged = document.querySelectorAll('.merged.pull-request-state-lozenge')
+
+  $merged.forEach(($element) => {
+    $element.innerText += ` 🎉`
+    $element.style.cssText = `${commonCSSFixForStatus} ${greenStatusCSS}`
+  })
+
 
   // Fix times
   const $times = document.querySelectorAll('.pull-request-content time')
