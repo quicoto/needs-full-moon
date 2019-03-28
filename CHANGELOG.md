@@ -1,3 +1,7 @@
+## 2.2.0
+
+- Watch for changes in the active pane to apply the magic.
+
 ## 2.1.0
 
 - Adds emoji to merged status.
