@@ -1,3 +1,7 @@
+## 2.2.1
+
+- Change from var to const.
+
 ## 2.2.0
 
 - Watch for changes in the active pane to apply the magic.

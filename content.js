@@ -39,8 +39,8 @@ if (window.location.hostname === hostname) {
 
   // Watch for changes
   const $activePane = document.querySelector(`.tabs-pane.active-pane.pull-request-content`)
-  var mutationConfig = { attributes: false, childList: true, subtree: true }
-  var observer = new MutationObserver(magic)
+  const mutationConfig = { attributes: false, childList: true, subtree: true }
+  const observer = new MutationObserver(magic)
   observer.observe($activePane, mutationConfig)
 
   magic()
