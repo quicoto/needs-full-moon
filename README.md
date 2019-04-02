@@ -1,5 +1,9 @@
 # Needs Full Moon 🌝
 
+## Requirements
+
+MacOS 10.14.3 which includes Emoji version 11 Spec.
+
 ## Emojis in Pull Request Status
 
 Adds the emoji after Bitbucket PR needs work or has been approved
