@@ -1,6 +1,7 @@
 const hostname = `source.int.netcentric.biz`
-const commonCSSFixForStatus = `padding: 7px 7px 6px;`
-const greenStatusCSS = `color: #14892c; background: white;`
+const commonCSSFixForStatus = `padding: 7px 7px 6px; background: white;`
+const greenStatusCSS = `color: #14892c;`
+const redStatusCSS = `color: #d04437;`
 
 
 if (window.location.hostname === hostname) {
@@ -25,6 +26,15 @@ if (window.location.hostname === hostname) {
       $element.innerText = `Merged 🎉`
       $element.style.cssText = `${commonCSSFixForStatus} ${greenStatusCSS}`
     })
+
+    const $unapproved = document.querySelectorAll('.unapproved.pull-request-state-lozenge')
+
+    $unapproved.forEach(($element) => {
+      $element.innerText = `Unapproved ❌`
+      $element.style.cssText = `${commonCSSFixForStatus} ${redStatusCSS}`
+    })
+
+
 
 
     // Fix times

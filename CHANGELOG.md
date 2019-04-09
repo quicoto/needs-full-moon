@@ -1,3 +1,7 @@
+## 2.3.0
+
+- Add unapproved styling.
+
 ## 2.2.1
 
 - Change from var to const.
