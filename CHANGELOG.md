@@ -1,3 +1,7 @@
+## 2.4.0
+
+- Add declined styling.
+
 ## 2.3.0
 
 - Add unapproved styling.

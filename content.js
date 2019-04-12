@@ -34,8 +34,12 @@ if (window.location.hostname === hostname) {
       $element.style.cssText = `${commonCSSFixForStatus} ${redStatusCSS}`
     })
 
+    const $declined = document.querySelectorAll('.declined.pull-request-state-lozenge')
 
-
+    $declined.forEach(($element) => {
+      $element.innerText = `Declined 🙅🏻‍♂️`
+      $element.style.cssText = `${commonCSSFixForStatus} ${redStatusCSS}`
+    })
 
     // Fix times
     const $times = document.querySelectorAll('.pull-request-content time')
