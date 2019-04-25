@@ -74,10 +74,10 @@ if (window.location.hostname === hostname) {
   }
 
   // Watch for changes
-  const $activePane = document.querySelector(`.tabs-pane.active-pane.pull-request-content`)
+  const $body = document.querySelector(`body`)
   const mutationConfig = { attributes: false, childList: true }
   const observer = new MutationObserver(magic)
-  observer.observe($activePane, mutationConfig)
+  observer.observe($body, mutationConfig)
 
   magic()
 }

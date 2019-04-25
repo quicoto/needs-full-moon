@@ -1,3 +1,7 @@
+## 2.5.1
+
+- Observe the body
+
 ## 2.5.0
 
 - Add opened, reopened and updated styling.
