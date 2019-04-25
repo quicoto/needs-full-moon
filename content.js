@@ -41,6 +41,28 @@ if (window.location.hostname === hostname) {
       $element.style.cssText = `${commonCSSFixForStatus} ${redStatusCSS}`
     })
 
+    const $updated = document.querySelectorAll('.updated.pull-request-state-lozenge')
+
+    $updated.forEach(($element) => {
+      $element.innerText = `Updated 🤦‍♂️`
+      $element.style.cssText = `${commonCSSFixForStatus} color: #ca9100`
+    })
+
+
+    const $opened = document.querySelectorAll('.opened.pull-request-state-lozenge')
+
+    $opened.forEach(($element) => {
+      $element.innerText = `opened 🤞`
+      $element.style.cssText = `${commonCSSFixForStatus} color: #4a6785`
+    })
+
+    const $reopened = document.querySelectorAll('.reopened.pull-request-state-lozenge')
+
+    $reopened.forEach(($element) => {
+      $element.innerText = `reopened 🤪`
+      $element.style.cssText = `${commonCSSFixForStatus} color: #4a6785`
+    })
+
     // Fix times
     const $times = document.querySelectorAll('.pull-request-content time')
 
@@ -53,7 +75,7 @@ if (window.location.hostname === hostname) {
 
   // Watch for changes
   const $activePane = document.querySelector(`.tabs-pane.active-pane.pull-request-content`)
-  const mutationConfig = { attributes: false, childList: true, subtree: true }
+  const mutationConfig = { attributes: false, childList: true }
   const observer = new MutationObserver(magic)
   observer.observe($activePane, mutationConfig)
 

@@ -1,3 +1,7 @@
+## 2.5.0
+
+- Add opened, reopened and updated styling.
+
 ## 2.4.0
 
 - Add declined styling.
