@@ -1,3 +1,7 @@
+## 2.5.2
+
+- Set timeout as the new JIRA lazyloads the view
+
 ## 2.5.1
 
 - Observe the body
