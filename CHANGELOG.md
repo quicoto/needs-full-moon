@@ -1,3 +1,7 @@
+## 3.0.0
+
+- Update to the new Bitbucket UI interface
+
 ## 2.5.2
 
 - Set timeout as the new JIRA lazyloads the view
